@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Name of the Site</title>
+</head>
+
+<body>
+    <!-- Popup Banner Overlay -->
+    <div class="pop_overlay">
+        <div class="popup">
+            <div class="left">
+                <h2>Вы выбираете сайт? Мы поможем!</h2>
+                <form action="#" class="form">
+                    <label for="topic" class="label">
+                        Тема вашего бизнеса/веб-сайта
+                    </label>
+                    <input type="text" placeholder="что делаете вы?" />
+                    <label for="comp_web" class="label">
+                        Сайт конкурентов
+                    </label>
+                    <input type="text" placeholder="Успешные конкуренты в этой области" />
+                    <label for="name" class="label">
+                        Как тебя зовут?
+                    </label>
+                    <input type="text" placeholder="Например, Светлана" />
+                    <label for="phone" class="label">
+                        Телефон (с кодом города)
+                    </label>
+                    <input type="number" maxlength="14" minlength="7" placeholder="8(XXX) XXX-XX-XX" />
+                    <button class="btn" onclick="close_pop()">
+                        Заказать консультацию
+                    </button>
+                </form>
+            </div>
+            <div class="right">
+                <div class="cross" onclick="close_pop()">
+                    <span class="close">|</span>
+                </div>
+                <img src="https://source.unsplash.com/486x540/?engineers" alt="Решатели проблем" class="banner_img">
+                <div class="banner_text">
+                    <h2>Делай бизнес с легкостью,</h2>
+                    <p>создание и поддержку сайта будет осуществлять Megagroup.ru!</p>
+                </div>
+                </img>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER NAVBAR -->
+    <header id="navbar">
+        <ul class="navlinks">
+            <a href="#">
+                <li>Главный</li>
+            </a>
+            <a href="#">
+                <li>Продукция и Услуги</li>
+            </a>
+            <a href="#">
+                <li>Услуги</li>
+            </a>
+            <a href="#">
+                <li>Тарифы</li>
+            </a>
+            <a href="#">
+                <li>Отзывы</li>
+            </a>
+            <a href="#">
+                <li>Свяжитесь с нами</li>
+            </a>
+        </ul>
+        <button class="btn">
+            Подать заявку
+        </button>
+        <div class="ham">
+            <span>_</span>
+            <span>_</span>
+            <span>_</span>
+        </div>
+    </header>
+
+    <section id="org_info">
+        <div class="info_row">
+            <a href="#">
+                <div class="info_col">
+                    <img class="brand_logo" src="logotip.png">
+                    <h3>Название сайта<br>
+                        <p>Окна, остекление балконов, лоджий</p>
+                    </h3>
+                </div>
+            </a>
+            <div class="info_col">
+                <img class="loc_icon" src="loc_icon.png">
+                <h5>Москва, Ленинский проспект, дом, дом, номер офиса</h5>
+            </div>
+            <div class="info_col">
+                <img class="phn_icon" src="phn_icon.png">
+                <h5>
+                    <p>+7(000)000-00-00<br> &nbsp;8(000)111-11-11
+                    </p>
+                </h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="img1.jpg" style="width:100%">
+            <div class="text">Текст заголовка</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img2.jpg" style="width:100%">
+            <div class="text">Подпись два</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img3.jpg" style="width:100%">
+            <div class="text">Подпись третья</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- The dots/circles -->
+        <div id="dots" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+        <div class="serv_row">
+            <a href="#">
+                <div class="info_col">
+                    <div class="serv_head">
+                        <h4>Окна и двери</h4>
+                    </div>
+                    <img class="brand_logo" src="serv1.jpg" alt="186.66x150"></img>
+                </div>
+            </a>
+            <a href="#">
+                <div class="info_col">
+                    <div class="serv_head">
+                        <h4>Балконы и лоджии</h4>
+                    </div>
+                    <img class="brand_logo" src="serv2.jpg" alt="186.66x150"></img>
+                </div>
+            </a>
+            <a href="#">
+                <div class="info_col">
+                    <div class="serv_head">
+                        <h4>Сервис и Услуги</h4>
+                    </div>
+                    <img class="brand_logo" src="serv3.jpg" alt="186.66x150"></img>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing">
+        <div class="plan">
+            <h2>Окна и двери</h2>
+            <ul>
+                <li>Пластиковые окна
+                    <p><span>5 200</span> py6</p>
+                </li>
+                <hr>
+                <li>Пластиковые двери
+                    <p><span>10 400</span> py6</p>
+                </li>
+                <hr>
+                <li>Деревянные окна
+                    <p><span>9 300</span> py6</p>
+                </li>
+                <hr>
+                <li>Деревянные двери
+                    <p><span>10 300</span> py6</p>
+                </li>
+                <hr>
+            </ul>
+        </div>
+        <div class="plan">
+            <h2>Остекление балконов</h2>
+            <ul>
+                <li>Стандарт
+                    <p><span>12 000</span> py6</p>
+                </li>
+                <hr>
+                <li>Термо Плюс
+                    <p><span>14 000</span> py6</p>
+                </li>
+                <hr>
+                <li>Термо Комфорт
+                    <p><span>16 000</span> py6</p>
+                </li>
+                <hr>
+                <li>Термо Премиум
+                    <p><span>18 000</span> py6</p>
+                </li>
+                <hr>
+            </ul>
+        </div>
+        <div class="plan">
+            <h2>Остекление лоджий</h2>
+            <ul>
+                <li>Стандарт
+                    <p><span>16 000</span> py6</p>
+                </li>
+                <hr>
+                <li>Термо Плюс
+                    <p><span>18 000</span> py6</p>
+                </li>
+                <hr>
+                <li>Термо Комфорт
+                    <p><span>20 000</span> py6</p>
+                </li>
+                <hr>
+                <li>Термо Премиум
+                    <p><span>22 000</span> py6</p>
+                </li>
+                <hr>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="about">
+            <h2>О компании</h2>
+            <p>Наша компания занимается производством и установкой окон более 10 лет. За свой многолетний опыт работы мы не только довели качество нашей продукции до совершенства, но и определили, проработали и довели до ума все возможные пожелания клиентов,
+                запустив шесть различных линий окон и дверей. <br/><br/> Замена окон на наши поможет вам сэкономить деньги и время благодаря налаженной цепочке поставок. Наши продукты не только соответствуют отраслевым стандартам, они на несколько уровней
+                выше. <br/><br/>Мы долго строили свою репутацию и теперь можем с гордостью сказать, что нам доверяют! Мы приносим комфорт в ваш дом!</p>
+            <a class="btn">Подать заявку</a>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <img src="rain.png" alt="rain">
+                <h3>Герметичность<br/>
+                    <p>Даже при сильном ветре боковые замки надежно удерживают окна</p>
+                </h3>
+            </div>
+            <div class="feature">
+                <img src="bhopu.png" alt="loudpeaker">
+                <h3>Высокая шумоизоляция<br/>
+                    <p>Трехслойные окна отлично защищают от внешнего шума, не пропуская его в комнату.</p>
+                </h3>
+            </div>
+            <div class="feature">
+                <img src="shield.png" alt="shield">
+                <h3>Безопасность дома<br/>
+                    <p>Боковые замки повышают устойчивость Ваших окон к взлому</p>
+                </h3>
+            </div>
+            <div class="feature">
+                <img src="offer.png" alt="offer">
+                <h3>Цена Качество<br/>
+                    <p>Высокое качество, среднерыночные цены</p>
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMOTIONS SECTION -->
+    <section id="promo">
+        <div class="left">
+            <div class="left_div">
+                <h2>Бесплатное измерение</h2>
+                <p>Оставьте заявку и технолог нашей компании произведет точный замер и расчет стоимости заказа.</p>
+                <a href="#">
+                    <img class="icon" src="button.png" alt="submit button">
+                    <p>подать заявку</p>
+                </a>
+            </div>
+            <img src="engg.jpg" alt="инженер">
+        </div>
+        <div class="right">
+            <h2>Акции:</h2>
+            <a href="#">При заказе остекления и отделки балкона или лоджии ламинат в подарок!</a><br/><br/><br/>
+            <a href="#">Первые 100 покупателей остекления в этом месяце продают стеклопакеты со скидкой 35%.</a><br/><br/><br/>
+            <a href="#">Лоджия со скидкой до 50%</a><br/><br/><br/>
+            <a href="#">При заказе онлайн с сайта действует специальное предложение - скидка на установку до 30%.</a><br/><br/><br/>
+        </div>
+    </section>
+
+    <!-- PHOTO GALLERY SECTION -->
+    <section id="pics">
+        <h2>Фотогалерея наших работ</h2>
+        <div class="gallery">
+            <div class="imgs">
+                <img src="pic1.jpg" alt="img1">
+                <img src="pic2.jpg" alt="img2">
+                <img src="pic3.jpg" alt="img3">
+            </div>
+        </div>
+        <hr>
+        <a class="prev" onclick="">&#10094;</a>
+        <a class="next" onclick="">&#10095;</a>
+        <div id="dots" style="text-align:center">
+            <span class="dot" onclick=""></span>
+            <span class="dot" onclick=""></span>
+            <span class="dot" onclick=""></span>
+        </div>
+    </section>
+
+    <!-- PROCEDURE DIV -->
+    <div class="procedure">
+        <div id="no1">
+            <h1>01</h1>
+            <div class="container">
+                <h3>Запрос</h3>
+                <p>Оставьте заявку на сайте или позвоните <br>+7 (000) 000-00-00</p>
+            </div>
+        </div>
+        <div id="no2">
+            <h1>02</h1>
+            <div class="container">
+                <h3>Измерение</h3>
+                <p>Технолог снимает замеры, рассчитывает смету</p>
+            </div>
+        </div>
+        <div id="no3">
+            <h1>03</h1>
+            <div class="container">
+                <h3>Монтаж</h3>
+                <p>Производим установку окон, дверей (балконы, лоджии)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEEDBACK SECTION -->
+    <section class="feedback">
+        <div class="head">
+            <h2>Отзывы наших клиентов</h2>
+            <button class="btn">Посмотреть все отзывы</button>
+        </div>
+        <div class="peeps">
+            <div class="card">
+                <img src="famous1.jpg" alt="famous1">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate accusamus quod, omnis unde adipisci maxime laboriosam, mollitia optio illo facilis asperiores consequatur quam beatae ut. A magnam quibusdam sed unde, repellat sit ea
+                    voluptatem id pariatur ducimus? </p>
+                <h2>Natalia Semyonova</h2>
+                <p>06.01.2020</p>
+            </div>
+            <div class="card">
+                <img src="famous2.jpg" alt="famous2">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate accusamus quod, omnis unde adipisci maxime laboriosam, mollitia optio illo facilis asperiores consequatur quam beatae ut. A magnam quibusdam sed unde, repellat sit ea
+                    voluptatem id pariatur ducimus? </p>
+                <h2>Victor Volkov</h2>
+                <p>24.12.2019</p>
+            </div>
+            <div class="card">
+                <img src="famous3.jpg" alt="famous3">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate accusamus quod, omnis unde adipisci maxime laboriosam, mollitia optio illo facilis asperiores consequatur quam beatae ut. A magnam quibusdam sed unde, repellat sit ea
+                    voluptatem id pariatur ducimus? </p>
+                <h2>Alexey Deev</h2>
+                <p>11.12.2019</p>
+            </div>
+        </div>
+        <hr>
+        <a class="prev" onclick="">&#10094;</a>
+        <a class="next" onclick="">&#10095;</a>
+        <div id="dots" style="text-align:center">
+            <span class="dot" onclick=""></span>
+            <span class="dot" onclick=""></span>
+            <span class="dot" onclick=""></span>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="left">
+                <h1>свяжитесь с нами:</h1>
+                <div class="info_col">
+                    <img class="phn_icon" src="phn_icon.png">
+                    <b><p>+7 (000) 000-00-00<br/> 8 (000) 111-11-11
+                    </p></b>
+                </div>
+                <div class="info_col">
+                    <img class="loc_icon" src="loc_icon.png"></img>
+                    <p>Москва, Ленинский проспект, дом, дом, номер офиса</p>
+                </div>
+                <hr>
+                <div class="soc_media">
+                    <img src="" alt="Wk">
+                    <img src="" alt="Twitter">
+                    <img src="" alt="Insta">
+                    <img src="" alt="Ok">
+                    <img src="" alt="YT">
+                </div>
+            </div>
+            <div class="right mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="700" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ 2020-2021 Ð ?? Ð ° Ð · Ð²Ð ° Ð½Ð¸Ðµ ÐºÐ¾Ð¼Ð¿Ð ° Ð½Ð¸Ð¸</p>
+            <p>Support. Website development in Megagroup. <a href="#"><span>&#8682;</span></a></p>
+        </div>
+    </footer>
+
+</body>
+<script>
+    var popup = document.querySelector("div.pop_overlay");
+
+    setTimeout(() => {
+        console.log("timeout");
+        show_pop;
+    }, 5000);
+
+    function show_pop() {
+        popup.style.display = "block";
+    }
+
+    function close_pop() {
+        popup.style.display = "none";
+        // btnClose.parentElement.parentElement.parentElement.style.display = "none";
+    }
+
+    // Slideshow 
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+</html>
